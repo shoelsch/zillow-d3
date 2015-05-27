@@ -54,6 +54,19 @@
             margin-top: 1.5em;
             margin-bottom: 1.5em;
         }
+
+        .reveal:hover {
+            position: relative;
+        }
+
+        .reveal:hover:after {
+            content: url(img/dom.gif); /* no need for qoutes */
+            display: block;
+            position: absolute;
+            left: 25px; /* change this value to one that suits you */
+            top: 25px; /* change this value to one that suits you */
+            border: 2px solid black;
+        }
         </style>
     </head>
     <body>
@@ -68,7 +81,7 @@
                 <h2>Overview</h2>
                 <p>Data-Driven Documents (D3.js)...</p>
                 <ul>
-                    <li><span class='green'>IS</span> a declarative framework for binding arbitrary data to a Document Object Model (DOM) and manipulating it</li>
+                    <li><span class='green'>IS</span> a declarative framework for binding arbitrary data to a <a  href='#' class='reveal'>Document Object Model (DOM)</a> and manipulating it</li>
                     <li><span class='green'>IS</span> built atop of web standards, avoiding proprietary representation</li>
                     <li><span class='red'>IS NOT</span> a chart framework out of the box</li>
                 </ul>
