@@ -6,6 +6,7 @@
         body {
             font-family: 'Lato', sans-serif;
             font-size: 1.2em;
+            font-weight: 300;
         }
 
         h1 {
@@ -15,6 +16,11 @@
 
         h2 {
             font-size: 1.3em;
+            font-weight: 400;
+        }
+
+        h3 {
+            font-size: 1.2em;
             font-weight: 400;
         }
 
@@ -33,29 +39,81 @@
             font-size: 1.5em;
         }
 
+        .green {
+            color: green;
+            font-weight: 700;
+        }
+
+        .red {
+            color: red;
+            font-weight: 700;
+        }
+
+        section {
+            border-top: 1px solid #a8a8a8;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
         </style>
     </head>
     <body>
         <div class='container'>
             <header>
-                <img src='logo.png' width='80px' />
+                <img src='img/logo.png' width='80px' />
                 <h1>D3.js brown-bag</h1>
             </header>
             <div style='clear: both;'></div>
-            <h2>Web Standards</h2>
-            <ul>
-                <li><a href='tutorial/web-standards/0.html'>Example 0</a></li>
-                <li><a href='tutorial/web-standards/1.html'>Example 1</a></li>
-                <li><a href='tutorial/web-standards/2a.html'>Example 2a</a></li>
-                <li><a href='tutorial/web-standards/2b.html'>Example 2b</a></li>
-                <li><a href='tutorial/web-standards/3.html'>Example 3</a></li>
-            </ul>
-            <h2>Scatterplot</h2>
-            <ul>
-                <li><a href='tutorial/scatterplot/0.html'>Example 0</a></li>
-                <li><a href='tutorial/scatterplot/1.html'>Example 1</a></li>
-                <li><a href='tutorial/scatterplot/2.html'>Example 2</a></li>
-            </ul>
+
+            <section>
+                <h2>Overview</h2>
+                <p>Data-Driven Documents (D3.js)...</p>
+                <ul>
+                    <li><span class='green'>IS</span> a declarative framework for binding arbitrary data to a Document Object Model (DOM) and manipulating it</li>
+                    <li><span class='green'>IS</span> built atop of web standards, avoiding proprietary representation</li>
+                    <li><span class='red'>IS NOT</span> a chart framework out of the box</li>
+                </ul>
+                <p><a href='http://d3js.org/'>Read more</a></p>
+                <img src='img/expressibility-vs-efficiency.png' />
+            </section>
+
+            <section>
+                <h2>What to Aspire to</h2>
+                <ul>
+                    <li><a href='http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html'>Obama's Budget Proposal</a></li>
+                    <li><a href='http://www.nytimes.com/interactive/2012/11/02/us/politics/paths-to-the-white-house.html'>Paths to the White House</a></li>
+                    <li><a href='http://bl.ocks.org/mbostock/061b3929ba0f3964d335'>Maze Tree</a></li>
+                    <li><a href='http://bl.ocks.org/mbostock/267208068dbb75285114'>Spiral Triangle</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Web Standards</h2>
+                <ul>
+                    <li><a href='tutorial/web-standards/0.html'>Example 0</a></li>
+                    <li><a href='tutorial/web-standards/1.html'>Example 1</a></li>
+                    <li><a href='tutorial/web-standards/2a.html'>Example 2a</a></li>
+                    <li><a href='tutorial/web-standards/2b.html'>Example 2b</a></li>
+                    <li><a href='tutorial/web-standards/3.html'>Example 3</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Scatterplot</h2>
+                <ul>
+                    <li><a href='tutorial/scatterplot/0.html'>Example 0</a></li>
+                    <li><a href='tutorial/scatterplot/1a.html'>Example 1a</a></li>
+                    <li><a href='tutorial/scatterplot/1b.html'>Example 1b</a></li>
+                    <li><a href='tutorial/scatterplot/2.html'>Example 2</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Now What?</h2>
+                <ul>
+                    <li><a href='https://github.com/mbostock/d3/wiki/Tutorials'>Tutorials</a></li>
+                    <li><a href='https://github.com/mbostock/d3/wiki/Gallery'>Examples</a></li>
+                    <li><a href='http://biovisualize.github.io/d3visualization/'>More Examples</a></li>
+                    <li><a href='http://nvd3.org/'>NVD3: Reusable Charts for D3</a></li>
+                </ul>
             <h2><a href='tutorial/blank.html'>Sandbox</a></h2>
         </div>
         <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
