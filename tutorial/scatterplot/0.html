@@ -4,7 +4,7 @@
 	.axis line {
 	    fill: none;
 	    stroke: black;
-	    shape-rendering: crispEdges;
+	    shape-rendering: crispEdges; /* balance between line precision and speed */
 	}
 
 	.axis text {
@@ -48,7 +48,7 @@
 	-->
 
 	<svg width='600' height='400'>
-		<g transform='translate(40,20)'>
+    <g transform='translate(40,20)'> <!-- container used to group objects -->
 			<g class='x axis' transform='translate(0,350)'>
 				<line x1='0' y1='0' x2='540' y2='0'></line>
 			</g>
@@ -56,6 +56,12 @@
 				<line x1='0' y1='0' x2='0' y2='350'></line>
 			</g>
 			<g class="circles">
+                <!-- 
+                Circle:
+                    cx: x axis coordinate of center of the circle
+                    cy: y axis coordinate of center of the circle
+                    r: circle radius
+                -->
 				<circle cx='162' cy='175' r='5' fill='steelblue'></circle>
 				<circle cx='432' cy='315' r='5' fill='steelblue'></circle>
 				<circle cx='216' cy='140' r='5' fill='steelblue'></circle>

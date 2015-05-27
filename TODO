@@ -1,0 +1,18 @@
+GRAPHIC
+Expressibility on right hand side
+Efficiency on the left hand side
+Add d3 to the graphic
+
+Give an example of declarative.
+
+Show the unscaled graph versions. What do these points look like without scaling?
+
+Cool tip
+X.invert(270) => 5
+
+Only show 2 visualization examples for d3
+javascript as a way to add interactivity
+
+what is svg vs raster;
+
+use console a little more
