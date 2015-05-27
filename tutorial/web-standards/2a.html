@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			h1 {
+				font-size: 24px;
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id='title'>
+			<h1>Hello World!</h1>
+		</div>
+
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script>
+			// Javascript
+			var clickMe = document.getElementById('title');
+
+			clickMe.onclick = function() {
+				this.style.backgroundColor = 'black';
+			};
+
+			// D3.js
+			var clickMe = d3.select('#title');
+
+			clickMe.on('click', function() {
+				d3.select(this)
+					.style('background-color', 'black');
+			});
+
+		</script>
+	</body>
+</html>

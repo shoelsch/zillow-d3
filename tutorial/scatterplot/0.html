@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<style>	
+	.axis path,
+	.axis line {
+	    fill: none;
+	    stroke: black;
+	    shape-rendering: crispEdges;
+	}
+
+	.axis text {
+	    font-family: sans-serif;
+	    font-size: 11px;
+	}
+</style>
+<body>
+	<!-- 
+
+	Canvas:
+		Width: 600,
+		Height: 400
+
+	Margin:
+		Top: 20,
+		Right: 20,
+		Bottom: 30,
+		Left: 40
+	
+	Plot:
+		Width: Canvas.width - Margin.left - Margin.right = 540,
+		Height: Canvas.height - Margin.top - Margin.bottom = 350
+
+	Domain:
+		X: [0, 10]
+		Y: [0, 10]
+
+	Range:
+		X: [0, 540]
+		Y: [0, 350]
+
+	Data:
+		Original => Scaled => Flip y-axis
+		(3, 5) => (162, 175) => (162, 175)
+		(8, 1) => (432, 35) => (432, 315)
+		(4, 6) => (216, 210) => (216, 140)
+		(2, 8) => (108, 280) => (108, 70)
+		(4, 3) => (216, 105) => (216, 245)
+
+	-->
+
+	<svg width='600' height='400'>
+		<g transform='translate(40,20)'>
+			<g class='x axis' transform='translate(0,350)'>
+				<line x1='0' y1='0' x2='540' y2='0'></line>
+			</g>
+			<g class='y axis'>
+				<line x1='0' y1='0' x2='0' y2='350'></line>
+			</g>
+			<g class="circles">
+				<circle cx='162' cy='175' r='5' fill='steelblue'></circle>
+				<circle cx='432' cy='315' r='5' fill='steelblue'></circle>
+				<circle cx='216' cy='140' r='5' fill='steelblue'></circle>
+				<circle cx='108' cy='70' r='5' fill='steelblue'></circle>
+				<circle cx='216' cy='245' r='5' fill='steelblue'></circle>
+			</g>
+		</g>
+	</svg>
+</body>
