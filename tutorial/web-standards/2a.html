@@ -12,23 +12,18 @@
 		<div id='title'>
 			<h1>Hello World!</h1>
 		</div>
-
-		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 		<script>
-			// Javascript
+
+			// Pre-2011 Javascript
 			var clickMe = document.getElementById('title');
 
+			// CSS3 Selector
+			var clickMe = document.querySelector('#title');
+			
 			clickMe.onclick = function() {
 				this.style.backgroundColor = 'black';
 			};
 
-			// D3.js
-			var clickMe = d3.select('#title');
-
-			clickMe.on('click', function() {
-				d3.select(this)
-					.style('background-color', 'black');
-			});
 
 		</script>
 	</body>

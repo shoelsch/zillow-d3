@@ -25,10 +25,18 @@
 	<body>
 		<svg width='600' height='600'>
 			<g class='shapes' transform="translate(50, 50)">
-				<circle cx='50' cy='50' r='15' />
+				<circle cx='250' cy='50' r='15' />
 				<rect width='25' height='25' x='100' y='125' />
 				<line x1='450' x2='350' y1='100' y2='200' />
-				<path d="M 100 350 q 150 -300 300 0" />
+				<path d="M 100 350 Q 250 50 400 350" />
+				<!--
+				Breakdown of path above:
+
+				M x y q x y xy xy
+				M: Move to (x,y)
+				q x1 y1 x y
+				q: quadratic bezier curve with the control point (x1, y1) and the end point of the curve (x, y)
+				-->
 			</g>
 		</svg>
 	</body>

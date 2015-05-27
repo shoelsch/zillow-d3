@@ -33,13 +33,16 @@
 			.domain([0, 10])
 			.range([0, width]);
 
+		// Color interpolation:
+		// var x = d3.scale.linear().domain([0,10]).range(['white', 'black'])
+
 		var y = d3.scale.linear()
 			.domain([0, 10])
 			.range([height, 0]); // Origin is in top left corner
 
 		var xAxis = d3.svg.axis()
 			.scale(x)
-			.orient("bottom");
+			.orient("bottom"); // Where the labels will appear relative to the axis
 
 		var yAxis = d3.svg.axis()
 			.scale(y)
@@ -48,7 +51,7 @@
 		var svg = d3.select("body").append("svg")
 		    .attr("width", width + margin.left + margin.right)
 		    .attr("height", height + margin.top + margin.bottom)
-		  .append("g")
+		  .append("g") // container used to group objects
 		  	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 		svg.append('g')
