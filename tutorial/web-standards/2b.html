@@ -2,26 +2,28 @@
 <html>
 	<head>
 		<style>
-			h1 {
+			.heading {
 				font-size: 24px;
-				color: blue;
+				color: orange;
 			}
 		</style>
 	</head>
 	<body>
-		<div id='title'>
-			<h1>Hello World!</h1>
+		<div id='header'>
+			<h1 class='heading'>Hello World!</h1>
+			<h2 class='heading'>From Zillow</h2>
 		</div>
 
 		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 		<script>
-			var clickMe = d3.select('#title');
+			var clickMe = d3.select('#header');
 
 			clickMe.on('click', function() {
 				d3.select(this)
-					.style('background-color', 'black');
+					.style('background-color', 'steelblue');
 			});
-			// clickMe.node()
+
+			// Look at clickMe.node()!
 		</script>
 	</body>
 </html>
